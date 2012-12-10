@@ -5,3 +5,5 @@
 *.war
 *.ear
 /PPE4/nbproject/private/
+/PPE4/build/
+/PPE4/dist/
