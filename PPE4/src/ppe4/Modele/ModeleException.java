@@ -14,7 +14,6 @@ public class ModeleException extends Exception{
      */
     public ModeleException() {
     }
-
     /**
      * Constructs an instance of <code>DaoException</code> with the specified detail message.
      * @param msg the detail message.

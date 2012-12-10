@@ -3,7 +3,6 @@
  * and open the template in the editor.
  */
 package ppe4.Modele;
-
 /**
  *
  * @author btssio
