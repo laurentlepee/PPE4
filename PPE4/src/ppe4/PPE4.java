@@ -12,7 +12,7 @@ package ppe4;
  */
 public class PPE4 {
 
-    /**
+    /**azeazeaze
      * @param args the command line arguments
      */
     public static void main(String[] args) {
