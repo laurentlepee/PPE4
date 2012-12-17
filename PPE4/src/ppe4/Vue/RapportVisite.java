@@ -6,7 +6,8 @@ package ppe4.Vue;
 
 /**
  *
- * @author ldesirest
+ * @author ldesirest Alias LDKwak
+ * 
  */
 public class RapportVisite extends javax.swing.JFrame {
 
