@@ -26,33 +26,33 @@ public class GestionComptesrendus extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        jLabelComptesRendusGestion = new javax.swing.JLabel();
+        jLabelVisiteursGestion = new javax.swing.JLabel();
+        jButtonQuitGestion = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButtonVisiteursGestion = new javax.swing.JButton();
+        jLabelTitreGestion = new javax.swing.JLabel();
+        jButtonComptesRendusGestion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Comptes-Rendus");
+        jLabelComptesRendusGestion.setText("Comptes-Rendus");
 
-        jLabel2.setText("Visiteurs");
+        jLabelVisiteursGestion.setText("Visiteurs");
 
-        jButton3.setText("Quitter");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonQuitGestion.setText("Quitter");
+        jButtonQuitGestion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButtonQuitGestionActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Valider");
+        jButtonVisiteursGestion.setText("Valider");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Gestion des comptes rendus");
+        jLabelTitreGestion.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabelTitreGestion.setText("Gestion des comptes rendus");
 
-        jButton1.setText("Valider");
+        jButtonComptesRendusGestion.setText("Valider");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -63,20 +63,20 @@ public class GestionComptesrendus extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(51, 51, 51)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
+                            .addComponent(jLabelVisiteursGestion)
+                            .addComponent(jLabelComptesRendusGestion))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1))
+                            .addComponent(jButtonVisiteursGestion)
+                            .addComponent(jButtonComptesRendusGestion))
                         .addGap(0, 59, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton3)))
+                        .addComponent(jButtonQuitGestion)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel4)
+                .addComponent(jLabelTitreGestion)
                 .addGap(55, 55, 55))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
@@ -87,28 +87,28 @@ public class GestionComptesrendus extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addComponent(jLabel4)
+                .addComponent(jLabelTitreGestion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel1))
+                    .addComponent(jButtonComptesRendusGestion)
+                    .addComponent(jLabelComptesRendusGestion))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jLabel2))
+                    .addComponent(jButtonVisiteursGestion)
+                    .addComponent(jLabelVisiteursGestion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(jButton3)
+                .addComponent(jButtonQuitGestion)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButtonQuitGestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitGestionActionPerformed
     System.exit(0);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButtonQuitGestionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -145,12 +145,12 @@ public class GestionComptesrendus extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton jButtonComptesRendusGestion;
+    private javax.swing.JButton jButtonQuitGestion;
+    private javax.swing.JButton jButtonVisiteursGestion;
+    private javax.swing.JLabel jLabelComptesRendusGestion;
+    private javax.swing.JLabel jLabelTitreGestion;
+    private javax.swing.JLabel jLabelVisiteursGestion;
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
