@@ -16,6 +16,8 @@ public abstract class Dao {
     // requêtes à préparer
     private PreparedStatement pstmtPraticien;
     private PreparedStatement pstmtPraticienSelection;
+    private PreparedStatement pstmtVisiteur;
+    private PreparedStatement pstmtVisiteurSelection;
     
 
     public Dao(String piloteJdbc, String urlBd, String loginBd, String mdpBd) {
@@ -33,7 +35,10 @@ public abstract class Dao {
                     "SELECT PRA_NOM, PRA_PRENOM FROM PRATICIEN", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             pstmtPraticienSelection = cnx.prepareStatement(
                     "SELECT * FROM PRATICIEN WHERE PRA_NUM=?", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-            
+            pstmtVisiteur = cnx.prepareStatement(
+                    "SELECT Vis_NOM, VIS_PRENOM FROM VISITEUR", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            pstmtVisiteurSelection = cnx.prepareStatement(
+                    "SELECT * FROM VISITEUR WHERE PRA_NUM=?", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         } catch (SQLException ex) {
             throw new DaoException("DAO - connecter : pb de connexion\n" + ex.getMessage());
         } catch (ClassNotFoundException ex) {
