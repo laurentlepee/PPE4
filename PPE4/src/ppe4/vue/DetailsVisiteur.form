@@ -44,11 +44,11 @@
                               </Group>
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTextFieldNomVisiteur" alignment="0" pref="89" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldPrenomVisiteur" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jTextFieldAdresseVisiteur" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jTextFieldCodePostalVisiteur" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jTextFieldVilleVisiteur" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jComboBoxNomVisiteur" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jComboBoxPrenomVisiteur" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jSeparator2" alignment="0" min="-2" pref="246" max="-2" attributes="0"/>
@@ -69,12 +69,12 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabelNomVisiteur" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextFieldNomVisiteur" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBoxNomVisiteur" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabelPrenomVisiteur" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextFieldPrenomVisiteur" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBoxPrenomVisiteur" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -142,11 +142,6 @@
         <Property name="text" type="java.lang.String" value="Nom"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextFieldPrenomVisiteur">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField2"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="jButtonQuitVisiteur">
       <Properties>
         <Property name="text" type="java.lang.String" value="Quitter"/>
@@ -157,17 +152,36 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator2">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextFieldNomVisiteur">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField1"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldNomVisiteurActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabelVilleVisiteur">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ville"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBoxNomVisiteur">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxNomVisiteurActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBoxPrenomVisiteur">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
       </Properties>
     </Component>
   </SubComponents>

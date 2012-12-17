@@ -34,11 +34,11 @@ public class DetailsVisiteur extends javax.swing.JFrame {
         jLabelPrenomVisiteur = new javax.swing.JLabel();
         jTextFieldAdresseVisiteur = new javax.swing.JTextField();
         jLabelNomVisiteur = new javax.swing.JLabel();
-        jTextFieldPrenomVisiteur = new javax.swing.JTextField();
         jButtonQuitVisiteur = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextFieldNomVisiteur = new javax.swing.JTextField();
         jLabelVilleVisiteur = new javax.swing.JLabel();
+        jComboBoxNomVisiteur = new javax.swing.JComboBox();
+        jComboBoxPrenomVisiteur = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,8 +59,6 @@ public class DetailsVisiteur extends javax.swing.JFrame {
 
         jLabelNomVisiteur.setText("Nom");
 
-        jTextFieldPrenomVisiteur.setText("jTextField2");
-
         jButtonQuitVisiteur.setText("Quitter");
         jButtonQuitVisiteur.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,14 +66,16 @@ public class DetailsVisiteur extends javax.swing.JFrame {
             }
         });
 
-        jTextFieldNomVisiteur.setText("jTextField1");
-        jTextFieldNomVisiteur.addActionListener(new java.awt.event.ActionListener() {
+        jLabelVilleVisiteur.setText("Ville");
+
+        jComboBoxNomVisiteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxNomVisiteur.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldNomVisiteurActionPerformed(evt);
+                jComboBoxNomVisiteurActionPerformed(evt);
             }
         });
 
-        jLabelVilleVisiteur.setText("Ville");
+        jComboBoxPrenomVisiteur.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,11 +100,11 @@ public class DetailsVisiteur extends javax.swing.JFrame {
                                     .addComponent(jLabelAdresseVisiteur))
                                 .addGap(32, 32, 32)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextFieldNomVisiteur, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
-                                    .addComponent(jTextFieldPrenomVisiteur)
                                     .addComponent(jTextFieldAdresseVisiteur)
                                     .addComponent(jTextFieldCodePostalVisiteur)
-                                    .addComponent(jTextFieldVilleVisiteur)))
+                                    .addComponent(jTextFieldVilleVisiteur)
+                                    .addComponent(jComboBoxNomVisiteur, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBoxPrenomVisiteur, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -118,11 +118,11 @@ public class DetailsVisiteur extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelNomVisiteur)
-                    .addComponent(jTextFieldNomVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxNomVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelPrenomVisiteur)
-                    .addComponent(jTextFieldPrenomVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxPrenomVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelAdresseVisiteur)
@@ -147,9 +147,9 @@ public class DetailsVisiteur extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jButtonQuitVisiteurActionPerformed
 
-    private void jTextFieldNomVisiteurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNomVisiteurActionPerformed
+    private void jComboBoxNomVisiteurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxNomVisiteurActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldNomVisiteurActionPerformed
+    }//GEN-LAST:event_jComboBoxNomVisiteurActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,6 +187,8 @@ public class DetailsVisiteur extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonQuitVisiteur;
+    private javax.swing.JComboBox jComboBoxNomVisiteur;
+    private javax.swing.JComboBox jComboBoxPrenomVisiteur;
     private javax.swing.JLabel jLabelAdresseVisiteur;
     private javax.swing.JLabel jLabelCodePostalVisiteur;
     private javax.swing.JLabel jLabelNomVisiteur;
@@ -196,8 +198,6 @@ public class DetailsVisiteur extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTextField jTextFieldAdresseVisiteur;
     private javax.swing.JTextField jTextFieldCodePostalVisiteur;
-    private javax.swing.JTextField jTextFieldNomVisiteur;
-    private javax.swing.JTextField jTextFieldPrenomVisiteur;
     private javax.swing.JTextField jTextFieldVilleVisiteur;
     // End of variables declaration//GEN-END:variables
 }
