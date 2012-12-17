@@ -4,6 +4,8 @@
  */
 package ppe4.Vue;
 
+import ppe4.Controleur.ControleurGestionComptesRendus;
+
 /**
  *
  * @author ldesirest
@@ -53,6 +55,11 @@ public class GestionComptesrendus extends javax.swing.JFrame {
         jLabelTitreGestion.setText("Gestion des comptes rendus");
 
         jButtonComptesRendusGestion.setText("Valider");
+        jButtonComptesRendusGestion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonComptesRendusGestionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,6 +116,14 @@ public class GestionComptesrendus extends javax.swing.JFrame {
     private void jButtonQuitGestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitGestionActionPerformed
     System.exit(0);
     }//GEN-LAST:event_jButtonQuitGestionActionPerformed
+
+    private void jButtonComptesRendusGestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonComptesRendusGestionActionPerformed
+        //On éxécute le controleur quand le bouton est pressé
+        ControleurGestionComptesRendus unControleur = new ControleurGestionComptesRendus();
+        unControleur.run();
+        //On cache la fenêtre 
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonComptesRendusGestionActionPerformed
 
     /**
      * @param args the command line arguments
