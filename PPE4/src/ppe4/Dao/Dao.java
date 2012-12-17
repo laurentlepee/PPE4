@@ -1,4 +1,4 @@
-package ppe4.dao;
+package ppe4.Dao;
 
 import java.sql.*;
 /**
