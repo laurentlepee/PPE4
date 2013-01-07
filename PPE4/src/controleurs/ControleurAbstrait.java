@@ -47,7 +47,7 @@ public abstract class ControleurAbstrait {
             try {
                 dao.connecter();
             } catch (DaoException ex) {
-                JOptionPane.showMessageDialog(vue, "CtrlAmbulance - instanciation - " + ex.getMessage(), "Saisie des présences", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(vue, "CtrlGSB - instanciation - " + ex.getMessage(), "Saisie des présences", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
