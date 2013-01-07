@@ -29,6 +29,7 @@ public abstract class ControleurAbstrait {
     private final String NOM_BD = "testgsb";
     private final String USER = "testgsb";
     private final String PWD = "testgsb1";
+    
     /**
      *
      */
