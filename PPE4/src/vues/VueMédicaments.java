@@ -6,17 +6,17 @@ package vues;
 
 import controleurs.*;
 
-
 /**
  *
  * @author btssio
  */
-public class VueMédicaments extends javax.swing.JFrame {
+public class VueMédicaments extends VueAbstraite {
 
     /**
      * Creates new form VueMédicaments
      */
-    public VueMédicaments() {
+    public VueMédicaments(ControleurAbstrait controleur) {
+        super(controleur);
         initComponents();
     }
 
@@ -233,7 +233,7 @@ public class VueMédicaments extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VueMédicaments().setVisible(true);
+                //new VueMédicaments().setVisible(true);
             }
         });
     }

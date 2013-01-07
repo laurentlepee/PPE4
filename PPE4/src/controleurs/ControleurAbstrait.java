@@ -26,9 +26,9 @@ public abstract class ControleurAbstrait {
      */
     protected ControleurAbstrait controleur;
     public static Dao dao;
-    private final String NOM_BD = "testgsb";
-    private final String USER = "testgsb";
-    private final String PWD = "testgsb1";
+    private final String NOM_BD = "TESTGSB";
+    private final String USER = "TESTGSB";
+    private final String PWD = "testgsb";
     
     /**
      *
@@ -47,7 +47,7 @@ public abstract class ControleurAbstrait {
             try {
                 dao.connecter();
             } catch (DaoException ex) {
-                JOptionPane.showMessageDialog(vue, "CtrlAmbulance - instanciation - " + ex.getMessage(), "Saisie des présences", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(vue, "CtrlGSB - instanciation - " + ex.getMessage(), "Saisie des présences", JOptionPane.ERROR_MESSAGE);
             }
         }
     }

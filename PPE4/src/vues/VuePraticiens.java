@@ -10,12 +10,13 @@ import controleurs.*;
  *
  * @author btssio
  */
-public class VuePraticiens extends javax.swing.JFrame {
+public class VuePraticiens extends VueAbstraite {
 
     /**
      * Creates new form VuePraticiens
      */
-    public VuePraticiens() {
+    public VuePraticiens(ControleurAbstrait controleur) {
+        super(controleur);
         initComponents();
     }
 
@@ -212,7 +213,7 @@ public class VuePraticiens extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonQuitPraticienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitPraticienActionPerformed
-        System.exit(0);
+        controleur.retourner();
     }//GEN-LAST:event_jButtonQuitPraticienActionPerformed
 
     /**
@@ -245,7 +246,7 @@ public class VuePraticiens extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VuePraticiens().setVisible(true);
+                //new VuePraticiens().setVisible(true);
             }
         });
     }

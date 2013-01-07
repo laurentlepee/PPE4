@@ -218,7 +218,7 @@ public class VueVisiteur extends VueAbstraite {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-//                new VueMenu().setVisible(true);
+                //new VueMenu().setVisible(true);
             }
         });
     }

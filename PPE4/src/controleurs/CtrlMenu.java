@@ -16,6 +16,8 @@ public class CtrlMenu extends ControleurAbstrait {
     // références sur les fonctionnalités auxquelles le menu donne accès
     private CtrlVisiteur ctrlVisiteur;
     private CtrlCompteRendu ctrlCompteRendu;
+    private CtrlMédicaments ctrlMédicaments;
+    //private CtrlPraticiens ctrlPraticiens;
 
     public CtrlMenu(ControleurAbstrait controleur) {
         super(controleur);
@@ -41,6 +43,27 @@ public class CtrlMenu extends ControleurAbstrait {
         }
         this.cacherVue();
     }
+    
+    public void choisirMédicaments() {
+        if (ctrlMédicaments == null) {
+            ctrlMédicaments = new CtrlMédicaments(this);
+        } else {
+            ctrlMédicaments.afficherVue();
+        }
+        this.cacherVue();
+    }
+    
+    /**
+     * public void choisirPraticiens() {
+        if (ctrlPraticiens == null) {
+            ctrlPraticiens = new CtrlPraticiens(this);
+        } else {
+            ctrlPraticiens.afficherVue();
+        }
+        this.cacherVue();
+    }
+    */
+    
 
     public void quitter() {
         int rep;
@@ -52,7 +75,8 @@ public class CtrlMenu extends ControleurAbstrait {
             // mettre fin à l'application
             System.exit(0);
         }
-    }
+    } 
+    
 
     private void changerLookAndFeel() {
         try {
