@@ -7,7 +7,7 @@ package controleurs;
 import javax.swing.JOptionPane;
 import modele.dao.Dao;
 import modele.dao.DaoException;
-import modele.dao.DaoMySql;
+import modele.dao.DaoOracle;
 import vues.VueAbstraite;
 
 /**
@@ -42,7 +42,7 @@ public abstract class ControleurAbstrait {
         this.controleur = controleur;
         if (dao == null) {
             // Ouvrir une connexion JDBC vers la base de données visée
-            dao = new DaoMySql(NOM_BD, USER, PWD);
+            dao = new DaoOracle(NOM_BD, USER, PWD);
             try {
                 dao.connecter();
             } catch (DaoException ex) {
