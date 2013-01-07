@@ -56,6 +56,7 @@ public abstract class ControleurAbstrait {
      *
      */
     public void afficherVue() {
+        vue.setResizable(false);
         vue.afficher();
     }
 
