@@ -26,9 +26,9 @@ public abstract class ControleurAbstrait {
      */
     protected ControleurAbstrait controleur;
     public static Dao dao;
-    private final String NOM_BD = "AMBULANCES_FIN";
-    private final String USER = "regulatrice";
-    private final String PWD = "regulatrice";
+    private final String NOM_BD = "testgsb";
+    private final String USER = "testgsb";
+    private final String PWD = "testgsb1";
     /**
      *
      */

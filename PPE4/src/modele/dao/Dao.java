@@ -1,15 +1,6 @@
 package modele.dao;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-//import modele.metier.CodeEtat;
-//import modele.metier.Equipier;
-//import modele.metier.Jour;
-//import modele.metier.ListePresences;
-//import modele.metier.Patient;
-//import modele.metier.Presence;
-
 /**
  *
  * @author btssio
