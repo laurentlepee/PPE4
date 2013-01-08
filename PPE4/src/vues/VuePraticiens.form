@@ -240,7 +240,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButtonQuitPraticien">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Quitter"/>
+        <Property name="text" type="java.lang.String" value="Retour"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonQuitPraticienActionPerformed"/>

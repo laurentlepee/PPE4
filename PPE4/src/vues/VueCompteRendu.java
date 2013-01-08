@@ -53,7 +53,7 @@ public class VueCompteRendu extends VueAbstraite {
         jbtnNouveau = new javax.swing.JButton();
         jButtonSuivantVisiteur = new javax.swing.JButton();
         jButtonPrécédentVisiteur = new javax.swing.JButton();
-        jButtonQuiRapport = new javax.swing.JButton();
+        jButtonQuitRapport = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -115,10 +115,10 @@ public class VueCompteRendu extends VueAbstraite {
 
         jButtonPrécédentVisiteur.setText("Précédent");
 
-        jButtonQuiRapport.setText("Fermer");
-        jButtonQuiRapport.addActionListener(new java.awt.event.ActionListener() {
+        jButtonQuitRapport.setText("Retour");
+        jButtonQuitRapport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonQuiRapportActionPerformed(evt);
+                jButtonQuitRapportActionPerformed(evt);
             }
         });
 
@@ -127,62 +127,55 @@ public class VueCompteRendu extends VueAbstraite {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButtonQuiRapport))
+                        .addComponent(jButtonQuitRapport))
+                    .addComponent(jSeparator1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabelPraticienRapport)
+                        .addGap(69, 69, 69)
+                        .addComponent(jComboBoxPraticienRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonDetailsPraticienRapport, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(jLabelNumeroRapportRapport)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextFieldNumeroRapportRapport))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator1)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(136, 136, 136)
-                                .addComponent(jComboBoxPraticienRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonDetailsPraticienRapport, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(12, 12, 12)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabelPraticienRapport)
-                                                    .addComponent(jLabelDateRapport)
-                                                    .addComponent(jLabelMotifVisiteRapport)))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(13, 13, 13)
-                                                .addComponent(jLabelBilanRapport)))
-                                        .addGap(39, 39, 39))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabelNumeroRapportRapport)
-                                        .addGap(18, 18, 18)))
+                                .addGap(156, 156, 156)
+                                .addComponent(jLabelMedicamentRapport))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabelOffreRapport)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBoxMedicamentRapport, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelEchantillonRapport)
+                            .addComponent(jTextFieldEchantillonRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jSeparator2)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelDateRapport)
+                            .addComponent(jLabelMotifVisiteRapport)
+                            .addComponent(jLabelBilanRapport))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(jButtonPrécédentVisiteur, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonSuivantVisiteur, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jbtnNouveau, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(39, 39, 39)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextFieldMotifVisiteRapport)
                                     .addComponent(jTextFieldDateRapportRapport)
-                                    .addComponent(jTextFieldNumeroRapportRapport)
-                                    .addComponent(jScrollPaneBilan, javax.swing.GroupLayout.Alignment.TRAILING)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(134, 134, 134)
-                                .addComponent(jButtonPrécédentVisiteur, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButtonSuivantVisiteur, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jbtnNouveau, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(23, 23, 23)
-                                .addComponent(jLabelOffreRapport)
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBoxMedicamentRapport, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabelMedicamentRapport)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelEchantillonRapport)
-                                    .addComponent(jTextFieldEchantillonRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jSeparator2))))
+                                    .addComponent(jScrollPaneBilan))))))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -194,7 +187,7 @@ public class VueCompteRendu extends VueAbstraite {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelTitreRapport)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -213,16 +206,16 @@ public class VueCompteRendu extends VueAbstraite {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldMotifVisiteRapport, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelMotifVisiteRapport))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelBilanRapport)
-                    .addComponent(jScrollPaneBilan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonPrécédentVisiteur)
+                    .addComponent(jScrollPaneBilan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelBilanRapport))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jbtnNouveau)
-                        .addComponent(jButtonSuivantVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButtonPrécédentVisiteur)
+                        .addComponent(jButtonSuivantVisiteur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jbtnNouveau))
                 .addGap(28, 28, 28)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -231,11 +224,11 @@ public class VueCompteRendu extends VueAbstraite {
                     .addComponent(jLabelEchantillonRapport))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxMedicamentRapport, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextFieldEchantillonRapport)
-                    .addComponent(jLabelOffreRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelOffreRapport, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBoxMedicamentRapport, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(8, 8, 8)
-                .addComponent(jButtonQuiRapport)
+                .addComponent(jButtonQuitRapport)
                 .addContainerGap())
         );
 
@@ -247,12 +240,12 @@ public class VueCompteRendu extends VueAbstraite {
     }//GEN-LAST:event_jTextFieldMotifVisiteRapportActionPerformed
 
     private void jbtnNouveauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNouveauActionPerformed
-        controleur.retourner();
+       
     }//GEN-LAST:event_jbtnNouveauActionPerformed
 
-    private void jButtonQuiRapportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuiRapportActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonQuiRapportActionPerformed
+    private void jButtonQuitRapportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitRapportActionPerformed
+        controleur.retourner();
+    }//GEN-LAST:event_jButtonQuitRapportActionPerformed
 
     /**
      * @param args the command line arguments
@@ -292,7 +285,7 @@ public class VueCompteRendu extends VueAbstraite {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonDetailsPraticienRapport;
     private javax.swing.JButton jButtonPrécédentVisiteur;
-    private javax.swing.JButton jButtonQuiRapport;
+    private javax.swing.JButton jButtonQuitRapport;
     private javax.swing.JButton jButtonSuivantVisiteur;
     private javax.swing.JComboBox jComboBoxMedicamentRapport;
     private javax.swing.JComboBox jComboBoxPraticienRapport;

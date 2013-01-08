@@ -23,62 +23,54 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jButtonPrécédentMédicaments" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButtonSuivantMédicaments" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jbtnQuitMédicaments" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabelCodeMédicaments" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabelNomMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelFamilleMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelCompositionMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelEffetsMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextFieldCodeMédicaments" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldNomMédicaments" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldFamilleMédicaments" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextFieldCompositionMédicaments" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                              <Component id="jScrollPaneEffetsMédicaments" pref="542" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabelContreMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelPrixMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextFieldPrixMédicaments" min="-2" pref="96" max="-2" attributes="0"/>
-                                  <Component id="jScrollPaneContreMédicaments" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                  </Group>
-              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jButtonPrécédentMédicaments" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButtonSuivantMédicaments" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jbtnQuitMédicaments" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="291" max="-2" attributes="0"/>
               <Component id="jLabelTitreMédicaments" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="301" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLabelCodeMédicaments" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Component id="jLabelNomMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelFamilleMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelCompositionMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelEffetsMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabelContreMédicaments" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabelPrixMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jTextFieldPrixMédicaments" min="-2" pref="96" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jTextFieldCodeMédicaments" max="32767" attributes="0"/>
+                          <Component id="jTextFieldNomMédicaments" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldFamilleMédicaments" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jTextFieldCompositionMédicaments" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jScrollPaneEffetsMédicaments" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jScrollPaneContreMédicaments" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -109,31 +101,26 @@
                   <Component id="jLabelCompositionMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextFieldCompositionMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPaneEffetsMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelEffetsMédicaments" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabelEffetsMédicaments" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabelContreMédicaments" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jScrollPaneEffetsMédicaments" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPaneContreMédicaments" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextFieldPrixMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelPrixMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jbtnQuitMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonSuivantMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonPrécédentMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="jScrollPaneContreMédicaments" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelContreMédicaments" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextFieldPrixMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelPrixMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jbtnQuitMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonSuivantMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonPrécédentMédicaments" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>

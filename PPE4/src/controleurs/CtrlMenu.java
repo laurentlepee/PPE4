@@ -17,7 +17,7 @@ public class CtrlMenu extends ControleurAbstrait {
     private CtrlVisiteur ctrlVisiteur;
     private CtrlCompteRendu ctrlCompteRendu;
     private CtrlMédicaments ctrlMédicaments;
-    //private CtrlPraticiens ctrlPraticiens;
+    private CtrlPraticiens ctrlPraticiens;
 
     public CtrlMenu(ControleurAbstrait controleur) {
         super(controleur);
@@ -53,8 +53,8 @@ public class CtrlMenu extends ControleurAbstrait {
         this.cacherVue();
     }
     
-    /**
-     * public void choisirPraticiens() {
+    
+    public void choisirPraticiens() {
         if (ctrlPraticiens == null) {
             ctrlPraticiens = new CtrlPraticiens(this);
         } else {
@@ -62,7 +62,7 @@ public class CtrlMenu extends ControleurAbstrait {
         }
         this.cacherVue();
     }
-    */
+    
     
 
     public void quitter() {

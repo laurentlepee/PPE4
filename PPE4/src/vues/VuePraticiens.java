@@ -86,7 +86,7 @@ public class VuePraticiens extends VueAbstraite {
 
         jTextFieldAdresse.setText("jTextField4");
 
-        jButtonQuitPraticien.setText("Quitter");
+        jButtonQuitPraticien.setText("Retour");
         jButtonQuitPraticien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonQuitPraticienActionPerformed(evt);

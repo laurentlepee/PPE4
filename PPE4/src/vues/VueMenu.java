@@ -72,6 +72,11 @@ public class VueMenu extends VueAbstraite {
         });
 
         jButtonMédicaments.setText("Médicaments");
+        jButtonMédicaments.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMédicamentsActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -129,8 +134,12 @@ public class VueMenu extends VueAbstraite {
     }//GEN-LAST:event_jbtnQuitterActionPerformed
 
     private void jButtonPraticiensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPraticiensActionPerformed
-        // TODO add your handling code here:
+        ((CtrlMenu)controleur).choisirMédicaments();
     }//GEN-LAST:event_jButtonPraticiensActionPerformed
+
+    private void jButtonMédicamentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMédicamentsActionPerformed
+        ((CtrlMenu)controleur).choisirPraticiens();
+    }//GEN-LAST:event_jButtonMédicamentsActionPerformed
 
     /**
      * @param args the command line arguments
