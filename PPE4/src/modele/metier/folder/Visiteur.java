@@ -44,30 +44,14 @@ public class Visiteur {
         this.SEC_CODE = SEC_CODE;
         this.LAB_CODE = LAB_CODE;
     }
-
-    //----------------------------------------------------------------------
-    //  Gestion de la liste des présences
-    //----------------------------------------------------------------------
-    public boolean ajouterUnePresence(Presence unePresence) {
-        return lesPresences.put(unePresence.getJour(), unePresence) == null;
-    }
-
-    public boolean supprimerUnePresence(Jour unJour) {
-        return lesPresences.remove(unJour) != null;
-    }
-
-    public Presence rechercherUnePresence(Jour unJour) {
-        Presence p= lesPresences.get(unJour);
-        return p;
-    }
-
+    
     //----------------------------------------------------------------------
     //  toString
     //  Accesseurs et Mutateurs
     //----------------------------------------------------------------------    
     @Override
     public String toString() {
-        return String.format("%1$-5s%2$-20s%3$-20s", id, nom, prenom);
+        return String.format("%1$-5s%2$-20s%3$-20s", VIS_MATRICULE, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATEEMBAUCHE, SEC_CODE, LAB_CODE);
     }
 
     /**
@@ -76,54 +60,82 @@ public class Visiteur {
      */
     public String versChaine() {
         String resu = "";
-        resu += "Equipier{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", dimanche=" + dimanche;
-        resu += "\n\tPrésences :\n";
-        for (Map.Entry<Jour, Presence> entree : lesPresences.entrySet()) {
-            Presence p = entree.getValue();
-            resu += "\t\t" + p + "\n";
-        }
+        resu += "Visiteur{" + "Matricule =" + VIS_MATRICULE + ", nom=" + VIS_NOM + ", prenom=" + VIS_PRENOM;
         resu += '}';
         return resu;
     }
+
+    public String getVIS_MATRICULE() {
+        return VIS_MATRICULE;
+    }
+
+    public void setVIS_MATRICULE(String VIS_MATRICULE) {
+        this.VIS_MATRICULE = VIS_MATRICULE;
+    }
+
+    public void setVIS_NOM(String VIS_NOM) {
+        this.VIS_NOM = VIS_NOM;
+    }
+
+    public void setVIS_PRENOM(String VIS_PRENOM) {
+        this.VIS_PRENOM = VIS_PRENOM;
+    }
+
+    public void setVIS_ADRESSE(String VIS_ADRESSE) {
+        this.VIS_ADRESSE = VIS_ADRESSE;
+    }
+
+    public void setVIS_CP(String VIS_CP) {
+        this.VIS_CP = VIS_CP;
+    }
+
+    public void setVIS_VILLE(String VIS_VILLE) {
+        this.VIS_VILLE = VIS_VILLE;
+    }
+
+    public void setVIS_DATEEMBAUCHE(String VIS_DATEEMBAUCHE) {
+        this.VIS_DATEEMBAUCHE = VIS_DATEEMBAUCHE;
+    }
+
+    public void setSEC_CODE(String SEC_CODE) {
+        this.SEC_CODE = SEC_CODE;
+    }
+
+    public void setLAB_CODE(String LAB_CODE) {
+        this.LAB_CODE = LAB_CODE;
+    }
     
     
-    public boolean isDimanche() {
-        return dimanche;
+
+    public String getVIS_NOM() {
+        return VIS_NOM;
     }
 
-    public void setDimanche(boolean dimanche) {
-        this.dimanche = dimanche;
+    public String getVIS_PRENOM() {
+        return VIS_PRENOM;
     }
 
-    public String getNom() {
-        return nom;
+    public String getVIS_ADRESSE() {
+        return VIS_ADRESSE;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public String getVIS_CP() {
+        return VIS_CP;
     }
 
-    public String getPrenom() {
-        return prenom;
+    public String getVIS_VILLE() {
+        return VIS_VILLE;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public String getVIS_DATEEMBAUCHE() {
+        return VIS_DATEEMBAUCHE;
     }
 
-    public ListePresences getLesPresences() {
-        return lesPresences;
+    public String getSEC_CODE() {
+        return SEC_CODE;
     }
 
-    public void setLesPresences(ListePresences lesPresences) {
-        this.lesPresences = lesPresences;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public String getLAB_CODE() {
+        return LAB_CODE;
     }
 }
