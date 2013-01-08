@@ -5,6 +5,9 @@
 package vues;
 
 import controleurs.*;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
 
 /**
  *
@@ -79,6 +82,11 @@ public class VueVisiteur extends VueAbstraite {
         jButtonOkVisiteur.setText("Ok");
 
         jTextFieldNomVisiteur.setText("jTextField1");
+        jTextFieldNomVisiteur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNomVisiteurActionPerformed(evt);
+            }
+        });
 
         jTextFieldPrénomVisiteur.setText("jTextField2");
 
@@ -188,40 +196,128 @@ public class VueVisiteur extends VueAbstraite {
         controleur.retourner();
     }//GEN-LAST:event_jbtnQuitVisiteurActionPerformed
 
+    private void jTextFieldNomVisiteurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNomVisiteurActionPerformed
+        // TODO add your handling code here:
+    }
+
+    public JButton getjButtonPrécédentVisiteur() {
+        return jButtonPrécédentVisiteur;
+    }
+
+    public void setjButtonPrécédentVisiteur(JButton jButtonPrécédentVisiteur) {
+        this.jButtonPrécédentVisiteur = jButtonPrécédentVisiteur;
+    }
+
+    public JButton getjButtonSuivantVisiteur() {
+        return jButtonSuivantVisiteur;
+    }
+
+    public void setjButtonSuivantVisiteur(JButton jButtonSuivantVisiteur) {
+        this.jButtonSuivantVisiteur = jButtonSuivantVisiteur;
+    }
+
+    public JComboBox getjComboBoxChercherVisiteur() {
+        return jComboBoxChercherVisiteur;
+    }
+
+    public void setjComboBoxChercherVisiteur(JComboBox jComboBoxChercherVisiteur) {
+        this.jComboBoxChercherVisiteur = jComboBoxChercherVisiteur;
+    }
+
+    public JComboBox getjComboBoxLaboVisiteur() {
+        return jComboBoxLaboVisiteur;
+    }
+
+    public void setjComboBoxLaboVisiteur(JComboBox jComboBoxLaboVisiteur) {
+        this.jComboBoxLaboVisiteur = jComboBoxLaboVisiteur;
+    }
+
+    public JComboBox getjComboBoxSecteurVisiteur() {
+        return jComboBoxSecteurVisiteur;
+    }
+
+    public void setjComboBoxSecteurVisiteur(JComboBox jComboBoxSecteurVisiteur) {
+        this.jComboBoxSecteurVisiteur = jComboBoxSecteurVisiteur;
+    }
+
+    public JTextField getjTextFieldCodePostale() {
+        return jTextFieldCodePostale;
+    }
+
+    public void setjTextFieldCodePostale(JTextField jTextFieldCodePostale) {
+        this.jTextFieldCodePostale = jTextFieldCodePostale;
+    }
+
+    public JTextField getjTextFieldNomVisiteur() {
+        return jTextFieldNomVisiteur;
+    }
+
+    public void setjTextFieldNomVisiteur(JTextField jTextFieldNomVisiteur) {
+        this.jTextFieldNomVisiteur = jTextFieldNomVisiteur;
+    }
+
+    public JTextField getjTextFieldPrénomVisiteur() {
+        return jTextFieldPrénomVisiteur;
+    }
+
+    public void setjTextFieldPrénomVisiteur(JTextField jTextFieldPrénomVisiteur) {
+        this.jTextFieldPrénomVisiteur = jTextFieldPrénomVisiteur;
+    }
+
+    public JTextField getjTextFieldVilleVisiteur() {
+        return jTextFieldVilleVisiteur;
+    }
+
+    public void setjTextFieldVilleVisiteur(JTextField jTextFieldVilleVisiteur) {
+        this.jTextFieldVilleVisiteur = jTextFieldVilleVisiteur;
+    }
+
+    public JButton getJbtnQuitVisiteur() {
+        return jbtnQuitVisiteur;
+    }
+
+    public void setJbtnQuitVisiteur(JButton jbtnQuitVisiteur) {
+        this.jbtnQuitVisiteur = jbtnQuitVisiteur;
+    }//GEN-LAST:event_jTextFieldNomVisiteurActionPerformed
+
+    
+    
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VueVisiteur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                //new VueMenu().setVisible(true);
+//            }
+//        });
+//    }
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                //new VueMenu().setVisible(true);
-            }
-        });
-    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonOkVisiteur;
     private javax.swing.JButton jButtonPrécédentVisiteur;

@@ -5,6 +5,7 @@
 package controleurs;
 
 import vues.VueVisiteur;
+import modele.metier.Visiteur; 
 
 /**
  *
@@ -18,4 +19,8 @@ public class CtrlVisiteur extends ControleurAbstrait {
         this.afficherVue();
     }
     
+    
+    
 }
+
+
